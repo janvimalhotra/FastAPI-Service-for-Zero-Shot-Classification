@@ -1,5 +1,5 @@
 # huggingFacetoV2
-This is a FastAPI service that provides an endpoint for performing zero-shot classification using a Hugging Face model.
+This is a FastAPI service that provides an endpoint for performing zero-shot classification using a Hugging Face model on truefoundry.
 
 # Installation
 Clone the repository to your local machine.<br>
