@@ -18,15 +18,31 @@ def predict(data: Dict[str, str]):
 
     # Prepare the input in V2 inference protocol format
     v2_input = {
-        "array_inputs": [inputs],
-        "candidate_labels": parameters.get("candidate_labels", []),
-        # Add any other keyword arguments accepted by zero-shot-classification
+        "inputs": [
+            {
+                "name": "array_inputs",
+                "shape": [-1],
+                "datatype": "BYTES",
+                "parameters": {
+                    "content_type": "str"
+                },
+                "data": [inputs]
+            },
+            {
+                "name": "candidate_labels",
+                "shape": [-1],
+                "datatype": "BYTES",
+                "parameters": {
+                    "content_type": "str"
+                },
+                "data": parameters.get("candidate_labels", [])
+            }
+        ]
     }
+
     v2_payload = {
-        "task": hf_pipeline,
-        "model": model_deployed_url,
         "inputs": v2_input,
-        "parameters": {}
+        "outputs": []
     }
 
     try:
