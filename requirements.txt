@@ -1,0 +1,6 @@
+fastapi
+requests
+typing
+numpy
+pandas
+uvicorn
