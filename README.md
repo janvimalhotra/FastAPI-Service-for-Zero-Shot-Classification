@@ -29,11 +29,11 @@ json<br>
 }<br>
 ### Post request
 Send a POST request to the /predict/ endpoint with the desired input.<br>
-Response<br>
+#### Response
 The response will be a JSON object containing the prediction result.<br>
 
 ### Customization
-You can customize the code to fit your specific requirements. Here are some points to consider:<br>
+###### You can customize the code to fit your specific requirements. Here are some points to consider:<br>
 
 Modify the predict function to handle different types of Hugging Face models or pipelines.<br>
 Update the endpoint URL and request body structure as needed.<br>
