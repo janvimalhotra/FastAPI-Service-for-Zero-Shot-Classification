@@ -2,7 +2,7 @@
 This is a FastAPI service that provides an endpoint for performing zero-shot classification using a Hugging Face model.
 
 # Installation
-Clone the repository to your local machine.
+Clone the repository to your local machine.<br>
 Navigate to the project directory.
 Prerequisites
 Python 3.7 or higher
